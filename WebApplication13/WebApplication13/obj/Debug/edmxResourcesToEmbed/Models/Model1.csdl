@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="pie" Relationship="Self.FK_pie_ToTable" FromRole="category" ToRole="pie" />
+  </EntityType>
+  <EntityType Name="pie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="prce" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imageurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="catid" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="category" Relationship="Self.FK_pie_ToTable" FromRole="pie" ToRole="category" />
+  </EntityType>
+  <Association Name="FK_pie_ToTable">
+    <End Role="category" Type="Self.category" Multiplicity="1" />
+    <End Role="pie" Type="Self.pie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="pie">
+        <PropertyRef Name="catid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="category" EntityType="Self.category" />
+    <EntitySet Name="pie" EntityType="Self.pie" />
+    <AssociationSet Name="FK_pie_ToTable" Association="Self.FK_pie_ToTable">
+      <End Role="category" EntitySet="category" />
+      <End Role="pie" EntitySet="pie" />
+    </AssociationSet>
+    <EntitySet Name="member" EntityType="Database1Model.member" />
+    <EntitySet Name="Table" EntityType="Database1Model.Table" />
+  </EntityContainer>
+  <EntityType Name="member">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

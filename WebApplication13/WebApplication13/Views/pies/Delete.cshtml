@@ -1,0 +1,87 @@
+﻿@model WebApplication13.Models.pie
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>pie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prce)
+        </dd>
+
+        <dt>
+            photo
+            @*@Html.DisplayNameFor(model => model.imageurl)*@
+        </dt>
+
+
+@try
+{
+
+    if (Model.imageurl.Length > 0)
+    {
+        <dd>
+            <img src="~/img/@Html.DisplayFor(model => model.imageurl)" class="thumbnail" style="width:73px;height:73px" />
+        </dd>
+    }
+}
+catch
+{
+
+    <dd>
+        no photo available
+    </dd>
+
+}
+        @*<dd>
+            <img src="~/img/@Html.DisplayFor(model => model.imageurl)" class="thumbnail" style="width:237px;height:237px" />
+        </dd>*@
+        @*<dd>
+            @Html.DisplayFor(model => model.imageurl)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

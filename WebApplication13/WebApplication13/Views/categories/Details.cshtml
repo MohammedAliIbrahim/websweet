@@ -1,0 +1,138 @@
+﻿@model WebApplication13.Models.category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@*<div>
+    <h4>category</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+    </dl>
+</div>*@
+<p>
+
+
+    @*<h2>Details</h2>*@
+
+    <div>
+        <h4>category</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.description)
+            </dd>
+
+        </dl>
+    </div>
+
+    <br />
+    <br />
+    <table class="table table-hover table-bordered">
+
+
+
+        <tr>
+            <th>
+               sweet name
+            </th>
+            
+            <th>
+                price
+            </th>
+            <th>
+                photo
+            </th>
+            <th>
+                category
+            </th>
+
+            <th></th>
+        </tr>
+        @foreach (var i in Model.pie)
+
+        {
+
+
+
+            <tr>
+                <td>
+                    @i.name
+                </td>
+               
+                <td>
+                    @i.prce
+                </td>
+
+                @try
+                {
+
+                    if (i.imageurl.Length > 0)
+                    {
+                        <td>
+                            <img src="~/img/@Html.DisplayFor(modelItem => i.imageurl)" class="thumbnail" style="width:147px;height:147px" alt="@i.name" />
+                        </td>
+                    }
+                }
+                catch
+                {
+
+                    <td>
+                        <img src="~/Images/bethanylogo.png" class="thumbnail" style="width:147px;height:147px" alt="no image available" />
+                    </td>
+
+                }
+               
+                @*<td>
+                    <img src="~/img/@Html.DisplayFor(modelItem => i.imageurl)" class="thumbnail" style="width:147px;height:147px" />
+                </td>*@
+                <td>
+                    @i.category.name
+                </td>
+
+                <th></th>
+            </tr>
+
+        }
+
+
+    </table>
+<p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div>  @Html.ActionLink("Edit Category Properties ", "Edit", new { id = Model.Id })  </div>
+    }
+    <br />
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

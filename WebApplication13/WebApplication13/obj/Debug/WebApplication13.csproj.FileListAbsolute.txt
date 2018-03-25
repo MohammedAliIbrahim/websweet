@@ -1,0 +1,198 @@
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\ApplicationInsights.config
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\csc.exe
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\csc.exe.config
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\csc.rsp
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\csi.exe
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\csi.rsp
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.AppContext.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.Collections.Immutable.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.IO.FileSystem.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\vbc.exe
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\vbc.exe.config
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\vbc.rsp
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\VBCSCompiler.exe
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\roslyn\VBCSCompiler.exe.config
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\WebApplication13.dll.config
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\WebApplication13.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\WebApplication13.pdb
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Antlr3.Runtime.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.Web.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.WindowsServer.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.ApplicationInsights.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Web.Infrastructure.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Newtonsoft.Json.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Helpers.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Mvc.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Optimization.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Razor.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.Deployment.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.Razor.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\WebGrease.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Helpers.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Mvc.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Optimization.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.Razor.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.Deployment.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\System.Web.WebPages.Razor.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Antlr3.Runtime.pdb
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Newtonsoft.Json.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.ApplicationInsights.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.WindowsServer.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AI.Web.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\obj\Debug\WebApplication13.csprojResolveAssemblyReference.cache
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\obj\Debug\WebApplication13.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\obj\Debug\WebApplication13.pdb
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\EntityFramework.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\EntityFramework.SqlServer.dll
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\EntityFramework.xml
+c:\users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\EntityFramework.SqlServer.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Owin.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Platform.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.dll
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.pdb
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.xml
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Platform.pdb
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.pdb
+C:\Users\m.ibrahim\documents\visual studio 2017\Projects\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.xml
+E:\t\WebApplication13\WebApplication13\bin\ApplicationInsights.config
+E:\t\WebApplication13\WebApplication13\bin\roslyn\csc.exe
+E:\t\WebApplication13\WebApplication13\bin\roslyn\csc.exe.config
+E:\t\WebApplication13\WebApplication13\bin\roslyn\csc.rsp
+E:\t\WebApplication13\WebApplication13\bin\roslyn\csi.exe
+E:\t\WebApplication13\WebApplication13\bin\roslyn\csi.rsp
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.AppContext.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.Collections.Immutable.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.IO.FileSystem.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\System.Reflection.Metadata.dll
+E:\t\WebApplication13\WebApplication13\bin\roslyn\vbc.exe
+E:\t\WebApplication13\WebApplication13\bin\roslyn\vbc.exe.config
+E:\t\WebApplication13\WebApplication13\bin\roslyn\vbc.rsp
+E:\t\WebApplication13\WebApplication13\bin\roslyn\VBCSCompiler.exe
+E:\t\WebApplication13\WebApplication13\bin\roslyn\VBCSCompiler.exe.config
+E:\t\WebApplication13\WebApplication13\bin\WebApplication13.dll.config
+E:\t\WebApplication13\WebApplication13\bin\WebApplication13.dll
+E:\t\WebApplication13\WebApplication13\bin\WebApplication13.pdb
+E:\t\WebApplication13\WebApplication13\bin\Antlr3.Runtime.dll
+E:\t\WebApplication13\WebApplication13\bin\EntityFramework.dll
+E:\t\WebApplication13\WebApplication13\bin\EntityFramework.SqlServer.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.Agent.Intercept.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.DependencyCollector.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.Web.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.WindowsServer.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.ApplicationInsights.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Core.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Cookies.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Google.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.OAuth.dll
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Web.Infrastructure.dll
+E:\t\WebApplication13\WebApplication13\bin\Newtonsoft.Json.dll
+E:\t\WebApplication13\WebApplication13\bin\Owin.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Helpers.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Mvc.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Optimization.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Razor.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.Deployment.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.dll
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.Razor.dll
+E:\t\WebApplication13\WebApplication13\bin\WebGrease.dll
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.dll
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Platform.dll
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.dll
+E:\t\WebApplication13\WebApplication13\bin\EntityFramework.xml
+E:\t\WebApplication13\WebApplication13\bin\EntityFramework.SqlServer.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Core.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Cookies.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.Google.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.Owin.Security.OAuth.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Helpers.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Mvc.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Optimization.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.Razor.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.Deployment.xml
+E:\t\WebApplication13\WebApplication13\bin\System.Web.WebPages.Razor.xml
+E:\t\WebApplication13\WebApplication13\bin\Antlr3.Runtime.pdb
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.pdb
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Core.xml
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Platform.pdb
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.pdb
+E:\t\WebApplication13\WebApplication13\bin\Xamarin.Forms.Xaml.xml
+E:\t\WebApplication13\WebApplication13\bin\Newtonsoft.Json.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.ApplicationInsights.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.DependencyCollector.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.WindowsServer.xml
+E:\t\WebApplication13\WebApplication13\bin\Microsoft.AI.Web.xml
+E:\t\WebApplication13\WebApplication13\obj\Debug\WebApplication13.csprojResolveAssemblyReference.cache
+E:\t\WebApplication13\WebApplication13\obj\Debug\WebApplication13.dll
+E:\t\WebApplication13\WebApplication13\obj\Debug\WebApplication13.pdb
+E:\t\WebApplication13\WebApplication13\obj\Debug\WebApplication13.csproj.CoreCompileInputs.cache
+E:\t\WebApplication13\WebApplication13\bin\ImageTools.dll

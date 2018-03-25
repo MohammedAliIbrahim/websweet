@@ -1,0 +1,77 @@
+﻿@model WebApplication13.Models.pie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>pie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prce)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imageurl)
+        
+        </dt>
+        @try { 
+        if (Model.imageurl.Length > 0)
+        {
+        <dd>
+            <img src="~/img/@Html.DisplayFor(model => model.imageurl)" class="thumbnail" style="width:337px;height:237px" />
+        </dd>
+        }
+        }
+        catch
+        {
+
+        <dd>
+            no photo available
+        </dd>
+
+        }
+        @*<dd>
+            <img src="~/img/@Html.DisplayFor(model => model.imageurl)" class="thumbnail" style="width:337px;height:237px" />
+            Html.DisplayFor(model => model.imageurl)
+       </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+@if (User.Identity.IsAuthenticated)
+{
+  <div>  @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) | </div> }
+    @Html.ActionLink("Back to List", "Index")
+</p>

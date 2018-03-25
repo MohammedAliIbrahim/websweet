@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0C6E5E2-F571-4237-94AD-0F404B0AA020}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication13</RootNamespace>
+    <AssemblyName>WebApplication13</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools">
+      <HintPath>C:\Users\m.ibrahim\Downloads\ImageTools\ImageTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\categoriesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\piesController.cs" />
+    <Compile Include="Controllers\rolesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\category.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\customval.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\member.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\pie.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\roleviewmodel.cs" />
+    <Compile Include="Models\Table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Controllers\Content\bootstrap.css" />
+    <Content Include="Controllers\Content\bootstrap.min.css" />
+    <Content Include="Controllers\Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Controllers\Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Controllers\Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Controllers\Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Controllers\Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Controllers\Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Controllers\Content\jquery-ui.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Controllers\Content\Site.css" />
+    <Content Include="Images\bethanylogo.png" />
+    <Content Include="Images\carousel1.jpg" />
+    <Content Include="Images\carousel2.jpg" />
+    <Content Include="Images\carousel3.jpg" />
+    <Content Include="Images\pattern.png" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="lib\bootstrap\dist\js\npm.js" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\Gruntfile.js" />
+    <Content Include="lib\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="lib\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="lib\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="lib\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="lib\bootstrap\grunt\change-version.js" />
+    <Content Include="lib\bootstrap\js\affix.js" />
+    <Content Include="lib\bootstrap\js\alert.js" />
+    <Content Include="lib\bootstrap\js\button.js" />
+    <Content Include="lib\bootstrap\js\carousel.js" />
+    <Content Include="lib\bootstrap\js\collapse.js" />
+    <Content Include="lib\bootstrap\js\dropdown.js" />
+    <Content Include="lib\bootstrap\js\modal.js" />
+    <Content Include="lib\bootstrap\js\popover.js" />
+    <Content Include="lib\bootstrap\js\scrollspy.js" />
+    <Content Include="lib\bootstrap\js\tab.js" />
+    <Content Include="lib\bootstrap\js\tooltip.js" />
+    <Content Include="lib\bootstrap\js\transition.js" />
+    <Content Include="lib\bootstrap\package.js" />
+    <Content Include="lib\jquery\AUTHORS.txt" />
+    <Content Include="lib\jquery\dist\core.js" />
+    <Content Include="lib\jquery\dist\jquery.js" />
+    <Content Include="lib\jquery\dist\jquery.min.js" />
+    <Content Include="lib\jquery\dist\jquery.slim.js" />
+    <Content Include="lib\jquery\dist\jquery.slim.min.js" />
+    <Content Include="lib\jquery\external\sizzle\dist\sizzle.js" />
+    <Content Include="lib\jquery\external\sizzle\dist\sizzle.min.js" />
+    <Content Include="lib\jquery\external\sizzle\LICENSE.txt" />
+    <Content Include="lib\jquery\LICENSE.txt" />
+    <Content Include="lib\jquery\src\ajax.js" />
+    <Content Include="lib\jquery\src\ajax\jsonp.js" />
+    <Content Include="lib\jquery\src\ajax\load.js" />
+    <Content Include="lib\jquery\src\ajax\parseXML.js" />
+    <Content Include="lib\jquery\src\ajax\script.js" />
+    <Content Include="lib\jquery\src\ajax\var\location.js" />
+    <Content Include="lib\jquery\src\ajax\var\nonce.js" />
+    <Content Include="lib\jquery\src\ajax\var\rquery.js" />
+    <Content Include="lib\jquery\src\ajax\xhr.js" />
+    <Content Include="lib\jquery\src\attributes.js" />
+    <Content Include="lib\jquery\src\attributes\attr.js" />
+    <Content Include="lib\jquery\src\attributes\classes.js" />
+    <Content Include="lib\jquery\src\attributes\prop.js" />
+    <Content Include="lib\jquery\src\attributes\support.js" />
+    <Content Include="lib\jquery\src\attributes\val.js" />
+    <Content Include="lib\jquery\src\callbacks.js" />
+    <Content Include="lib\jquery\src\core.js" />
+    <Content Include="lib\jquery\src\core\access.js" />
+    <Content Include="lib\jquery\src\core\DOMEval.js" />
+    <Content Include="lib\jquery\src\core\init.js" />
+    <Content Include="lib\jquery\src\core\parseHTML.js" />
+    <Content Include="lib\jquery\src\core\ready-no-deferred.js" />
+    <Content Include="lib\jquery\src\core\ready.js" />
+    <Content Include="lib\jquery\src\core\readyException.js" />
+    <Content Include="lib\jquery\src\core\stripAndCollapse.js" />
+    <Content Include="lib\jquery\src\core\support.js" />
+    <Content Include="lib\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="lib\jquery\src\css.js" />
+    <Content Include="lib\jquery\src\css\addGetHookIf.js" />
+    <Content Include="lib\jquery\src\css\adjustCSS.js" />
+    <Content Include="lib\jquery\src\css\curCSS.js" />
+    <Content Include="lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="lib\jquery\src\css\showHide.js" />
+    <Content Include="lib\jquery\src\css\support.js" />
+    <Content Include="lib\jquery\src\css\var\cssExpand.js" />
+    <Content Include="lib\jquery\src\css\var\getStyles.js" />
+    <Content Include="lib\jquery\src\css\var\isHiddenWithinTree.js" />
+    <Content Include="lib\jquery\src\css\var\rmargin.js" />
+    <Content Include="lib\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="lib\jquery\src\css\var\swap.js" />
+    <Content Include="lib\jquery\src\data.js" />
+    <Content Include="lib\jquery\src\data\Data.js" />
+    <Content Include="lib\jquery\src\data\var\acceptData.js" />
+    <Content Include="lib\jquery\src\data\var\dataPriv.js" />
+    <Content Include="lib\jquery\src\data\var\dataUser.js" />
+    <Content Include="lib\jquery\src\deferred.js" />
+    <Content Include="lib\jquery\src\deferred\exceptionHook.js" />
+    <Content Include="lib\jquery\src\deprecated.js" />
+    <Content Include="lib\jquery\src\dimensions.js" />
+    <Content Include="lib\jquery\src\effects.js" />
+    <Content Include="lib\jquery\src\effects\animatedSelector.js" />
+    <Content Include="lib\jquery\src\effects\Tween.js" />
+    <Content Include="lib\jquery\src\event.js" />
+    <Content Include="lib\jquery\src\event\ajax.js" />
+    <Content Include="lib\jquery\src\event\alias.js" />
+    <Content Include="lib\jquery\src\event\focusin.js" />
+    <Content Include="lib\jquery\src\event\support.js" />
+    <Content Include="lib\jquery\src\event\trigger.js" />
+    <Content Include="lib\jquery\src\exports\amd.js" />
+    <Content Include="lib\jquery\src\exports\global.js" />
+    <Content Include="lib\jquery\src\jquery.js" />
+    <Content Include="lib\jquery\src\manipulation.js" />
+    <Content Include="lib\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="lib\jquery\src\manipulation\getAll.js" />
+    <Content Include="lib\jquery\src\manipulation\setGlobalEval.js" />
+    <Content Include="lib\jquery\src\manipulation\support.js" />
+    <Content Include="lib\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="lib\jquery\src\manipulation\var\rscriptType.js" />
+    <Content Include="lib\jquery\src\manipulation\var\rtagName.js" />
+    <Content Include="lib\jquery\src\manipulation\wrapMap.js" />
+    <Content Include="lib\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="lib\jquery\src\offset.js" />
+    <Content Include="lib\jquery\src\queue.js" />
+    <Content Include="lib\jquery\src\queue\delay.js" />
+    <Content Include="lib\jquery\src\selector-native.js" />
+    <Content Include="lib\jquery\src\selector-sizzle.js" />
+    <Content Include="lib\jquery\src\selector.js" />
+    <Content Include="lib\jquery\src\serialize.js" />
+    <Content Include="lib\jquery\src\traversing.js" />
+    <Content Include="lib\jquery\src\traversing\findFilter.js" />
+    <Content Include="lib\jquery\src\traversing\var\dir.js" />
+    <Content Include="lib\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="lib\jquery\src\traversing\var\siblings.js" />
+    <Content Include="lib\jquery\src\var\arr.js" />
+    <Content Include="lib\jquery\src\var\class2type.js" />
+    <Content Include="lib\jquery\src\var\concat.js" />
+    <Content Include="lib\jquery\src\var\document.js" />
+    <Content Include="lib\jquery\src\var\documentElement.js" />
+    <Content Include="lib\jquery\src\var\fnToString.js" />
+    <Content Include="lib\jquery\src\var\getProto.js" />
+    <Content Include="lib\jquery\src\var\hasOwn.js" />
+    <Content Include="lib\jquery\src\var\indexOf.js" />
+    <Content Include="lib\jquery\src\var\ObjectFunctionString.js" />
+    <Content Include="lib\jquery\src\var\pnum.js" />
+    <Content Include="lib\jquery\src\var\push.js" />
+    <Content Include="lib\jquery\src\var\rcssNum.js" />
+    <Content Include="lib\jquery\src\var\rnothtmlwhite.js" />
+    <Content Include="lib\jquery\src\var\slice.js" />
+    <Content Include="lib\jquery\src\var\support.js" />
+    <Content Include="lib\jquery\src\var\toString.js" />
+    <Content Include="lib\jquery\src\wrap.js" />
+    <Content Include="lib\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="wwwroot\Content\site.css" />
+    <Content Include="wwwroot\Images\bethanylogo.png" />
+    <Content Include="wwwroot\Images\carousel1.jpg" />
+    <Content Include="wwwroot\Images\carousel2.jpg" />
+    <Content Include="wwwroot\Images\carousel3.jpg" />
+    <Content Include="wwwroot\Images\pattern.png" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootstrap\Gruntfile.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\change-version.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\affix.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\alert.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\button.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\carousel.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\collapse.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\dropdown.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\modal.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\popover.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\scrollspy.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\tab.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\tooltip.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\transition.js" />
+    <Content Include="wwwroot\lib\bootstrap\package.js" />
+    <Content Include="wwwroot\lib\jquery\AUTHORS.txt" />
+    <Content Include="wwwroot\lib\jquery\dist\core.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.slim.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.slim.min.js" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.js" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.min.js" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\LICENSE.txt" />
+    <Content Include="wwwroot\lib\jquery\LICENSE.txt" />
+    <Content Include="wwwroot\lib\jquery\src\ajax.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\jsonp.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\load.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\parseXML.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\script.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\location.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\nonce.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\var\rquery.js" />
+    <Content Include="wwwroot\lib\jquery\src\ajax\xhr.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\attr.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\classes.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\prop.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\attributes\val.js" />
+    <Content Include="wwwroot\lib\jquery\src\callbacks.js" />
+    <Content Include="wwwroot\lib\jquery\src\core.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\access.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\DOMEval.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\init.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\parseHTML.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\ready-no-deferred.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\ready.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\readyException.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\stripAndCollapse.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="wwwroot\lib\jquery\src\css.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\addGetHookIf.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\adjustCSS.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\curCSS.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\showHide.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\cssExpand.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\getStyles.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\isHiddenWithinTree.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\rmargin.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="wwwroot\lib\jquery\src\css\var\swap.js" />
+    <Content Include="wwwroot\lib\jquery\src\data.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\Data.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\var\acceptData.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\var\dataPriv.js" />
+    <Content Include="wwwroot\lib\jquery\src\data\var\dataUser.js" />
+    <Content Include="wwwroot\lib\jquery\src\deferred.js" />
+    <Content Include="wwwroot\lib\jquery\src\deferred\exceptionHook.js" />
+    <Content Include="wwwroot\lib\jquery\src\deprecated.js" />
+    <Content Include="wwwroot\lib\jquery\src\dimensions.js" />
+    <Content Include="wwwroot\lib\jquery\src\effects.js" />
+    <Content Include="wwwroot\lib\jquery\src\effects\animatedSelector.js" />
+    <Content Include="wwwroot\lib\jquery\src\effects\Tween.js" />
+    <Content Include="wwwroot\lib\jquery\src\event.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\ajax.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\alias.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\focusin.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\event\trigger.js" />
+    <Content Include="wwwroot\lib\jquery\src\exports\amd.js" />
+    <Content Include="wwwroot\lib\jquery\src\exports\global.js" />
+    <Content Include="wwwroot\lib\jquery\src\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\getAll.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\setGlobalEval.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rscriptType.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\var\rtagName.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\wrapMap.js" />
+    <Content Include="wwwroot\lib\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="wwwroot\lib\jquery\src\offset.js" />
+    <Content Include="wwwroot\lib\jquery\src\queue.js" />
+    <Content Include="wwwroot\lib\jquery\src\queue\delay.js" />
+    <Content Include="wwwroot\lib\jquery\src\selector-native.js" />
+    <Content Include="wwwroot\lib\jquery\src\selector-sizzle.js" />
+    <Content Include="wwwroot\lib\jquery\src\selector.js" />
+    <Content Include="wwwroot\lib\jquery\src\serialize.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing\findFilter.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\dir.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="wwwroot\lib\jquery\src\traversing\var\siblings.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\arr.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\class2type.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\concat.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\document.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\documentElement.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\fnToString.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\getProto.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\hasOwn.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\indexOf.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\ObjectFunctionString.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\pnum.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\push.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\rcssNum.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\rnothtmlwhite.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\slice.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\support.js" />
+    <Content Include="wwwroot\lib\jquery\src\var\toString.js" />
+    <Content Include="wwwroot\lib\jquery\src\wrap.js" />
+    <Content Include="lib\bootstrap\.bower.json" />
+    <Content Include="lib\bootstrap\bower.json" />
+    <Content Include="lib\bootstrap\CHANGELOG.md" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="lib\bootstrap\Gemfile" />
+    <Content Include="lib\bootstrap\Gemfile.lock" />
+    <Content Include="lib\bootstrap\grunt\.jshintrc" />
+    <Content Include="lib\bootstrap\grunt\configBridge.json" />
+    <Content Include="lib\bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="lib\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="lib\bootstrap\ISSUE_TEMPLATE.md" />
+    <Content Include="lib\bootstrap\js\.jscsrc" />
+    <Content Include="lib\bootstrap\js\.jshintrc" />
+    <Content Include="lib\bootstrap\less\.csscomb.json" />
+    <Content Include="lib\bootstrap\less\.csslintrc" />
+    <Content Include="lib\bootstrap\less\alerts.less" />
+    <Content Include="lib\bootstrap\less\badges.less" />
+    <Content Include="lib\bootstrap\less\bootstrap.less" />
+    <Content Include="lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="lib\bootstrap\less\button-groups.less" />
+    <Content Include="lib\bootstrap\less\buttons.less" />
+    <Content Include="lib\bootstrap\less\carousel.less" />
+    <Content Include="lib\bootstrap\less\close.less" />
+    <Content Include="lib\bootstrap\less\code.less" />
+    <Content Include="lib\bootstrap\less\component-animations.less" />
+    <Content Include="lib\bootstrap\less\dropdowns.less" />
+    <Content Include="lib\bootstrap\less\forms.less" />
+    <Content Include="lib\bootstrap\less\glyphicons.less" />
+    <Content Include="lib\bootstrap\less\grid.less" />
+    <Content Include="lib\bootstrap\less\input-groups.less" />
+    <Content Include="lib\bootstrap\less\jumbotron.less" />
+    <Content Include="lib\bootstrap\less\labels.less" />
+    <Content Include="lib\bootstrap\less\list-group.less" />
+    <Content Include="lib\bootstrap\less\media.less" />
+    <Content Include="lib\bootstrap\less\mixins.less" />
+    <Content Include="lib\bootstrap\less\mixins\alerts.less" />
+    <Content Include="lib\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="lib\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="lib\bootstrap\less\mixins\buttons.less" />
+    <Content Include="lib\bootstrap\less\mixins\center-block.less" />
+    <Content Include="lib\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="lib\bootstrap\less\mixins\forms.less" />
+    <Content Include="lib\bootstrap\less\mixins\gradients.less" />
+    <Content Include="lib\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="lib\bootstrap\less\mixins\grid.less" />
+    <Content Include="lib\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="lib\bootstrap\less\mixins\image.less" />
+    <Content Include="lib\bootstrap\less\mixins\labels.less" />
+    <Content Include="lib\bootstrap\less\mixins\list-group.less" />
+    <Content Include="lib\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="lib\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="lib\bootstrap\less\mixins\opacity.less" />
+    <Content Include="lib\bootstrap\less\mixins\pagination.less" />
+    <Content Include="lib\bootstrap\less\mixins\panels.less" />
+    <Content Include="lib\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="lib\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="lib\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="lib\bootstrap\less\mixins\resize.less" />
+    <Content Include="lib\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="lib\bootstrap\less\mixins\size.less" />
+    <Content Include="lib\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="lib\bootstrap\less\mixins\table-row.less" />
+    <Content Include="lib\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="lib\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="lib\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="lib\bootstrap\less\modals.less" />
+    <Content Include="lib\bootstrap\less\navbar.less" />
+    <Content Include="lib\bootstrap\less\navs.less" />
+    <Content Include="lib\bootstrap\less\normalize.less" />
+    <Content Include="lib\bootstrap\less\pager.less" />
+    <Content Include="lib\bootstrap\less\pagination.less" />
+    <Content Include="lib\bootstrap\less\panels.less" />
+    <Content Include="lib\bootstrap\less\popovers.less" />
+    <Content Include="lib\bootstrap\less\print.less" />
+    <Content Include="lib\bootstrap\less\progress-bars.less" />
+    <Content Include="lib\bootstrap\less\responsive-embed.less" />
+    <Content Include="lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="lib\bootstrap\less\scaffolding.less" />
+    <Content Include="lib\bootstrap\less\tables.less" />
+    <Content Include="lib\bootstrap\less\theme.less" />
+    <Content Include="lib\bootstrap\less\thumbnails.less" />
+    <Content Include="lib\bootstrap\less\tooltip.less" />
+    <Content Include="lib\bootstrap\less\type.less" />
+    <Content Include="lib\bootstrap\less\utilities.less" />
+    <Content Include="lib\bootstrap\less\variables.less" />
+    <Content Include="lib\bootstrap\less\wells.less" />
+    <Content Include="lib\bootstrap\LICENSE" />
+    <Content Include="lib\bootstrap\nuget\bootstrap.less.nuspec" />
+    <Content Include="lib\bootstrap\nuget\bootstrap.nuspec" />
+    <Content Include="lib\bootstrap\nuget\MyGet.ps1" />
+    <Content Include="lib\bootstrap\package.json" />
+    <Content Include="lib\bootstrap\README.md" />
+    <Content Include="lib\jquery\.bower.json" />
+    <Content Include="lib\jquery\bower.json" />
+    <Content Include="lib\jquery\dist\jquery.min.map" />
+    <Content Include="lib\jquery\dist\jquery.slim.min.map" />
+    <Content Include="lib\jquery\external\sizzle\dist\sizzle.min.map" />
+    <Content Include="lib\jquery\README.md" />
+    <Content Include="lib\jquery\src\.eslintrc.json" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="wwwroot\lib\bootstrap\.bower.json" />
+    <Content Include="wwwroot\lib\bootstrap\bower.json" />
+    <Content Include="wwwroot\lib\bootstrap\CHANGELOG.md" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\lib\bootstrap\Gemfile" />
+    <Content Include="wwwroot\lib\bootstrap\Gemfile.lock" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\.jshintrc" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\configBridge.json" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="wwwroot\lib\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="wwwroot\lib\bootstrap\ISSUE_TEMPLATE.md" />
+    <Content Include="wwwroot\lib\bootstrap\js\.jscsrc" />
+    <Content Include="wwwroot\lib\bootstrap\js\.jshintrc" />
+    <Content Include="wwwroot\lib\bootstrap\less\.csscomb.json" />
+    <Content Include="wwwroot\lib\bootstrap\less\.csslintrc" />
+    <Content Include="wwwroot\lib\bootstrap\less\alerts.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\badges.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\button-groups.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\buttons.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\carousel.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\close.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\code.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\component-animations.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\dropdowns.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\forms.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\glyphicons.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\grid.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\input-groups.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\jumbotron.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\labels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\list-group.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\media.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\alerts.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\buttons.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\center-block.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\forms.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\gradients.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\grid.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\image.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\labels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\list-group.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\opacity.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\pagination.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\panels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\resize.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\size.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\table-row.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\modals.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\navbar.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\navs.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\normalize.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\pager.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\pagination.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\panels.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\popovers.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\print.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\progress-bars.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\responsive-embed.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\scaffolding.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\tables.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\theme.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\thumbnails.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\tooltip.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\type.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\utilities.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\variables.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\wells.less" />
+    <Content Include="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Include="wwwroot\lib\bootstrap\nuget\bootstrap.less.nuspec" />
+    <Content Include="wwwroot\lib\bootstrap\nuget\bootstrap.nuspec" />
+    <Content Include="wwwroot\lib\bootstrap\nuget\MyGet.ps1" />
+    <Content Include="wwwroot\lib\bootstrap\package.json" />
+    <Content Include="wwwroot\lib\bootstrap\README.md" />
+    <Content Include="wwwroot\lib\jquery\.bower.json" />
+    <Content Include="wwwroot\lib\jquery\bower.json" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.slim.min.map" />
+    <Content Include="wwwroot\lib\jquery\external\sizzle\dist\sizzle.min.map" />
+    <Content Include="wwwroot\lib\jquery\README.md" />
+    <Content Include="wwwroot\lib\jquery\src\.eslintrc.json" />
+    <Content Include="Views\categories\Create.cshtml" />
+    <Content Include="Views\categories\Delete.cshtml" />
+    <Content Include="Views\categories\Details.cshtml" />
+    <Content Include="Views\categories\Edit.cshtml" />
+    <Content Include="Views\categories\Index.cshtml" />
+    <Content Include="Views\pies\Create.cshtml" />
+    <Content Include="Views\pies\Delete.cshtml" />
+    <Content Include="Views\pies\Details.cshtml" />
+    <Content Include="Views\pies\Edit.cshtml" />
+    <Content Include="Views\pies\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\roles\Index.cshtml" />
+    <Content Include="Views\roles\Create.cshtml" />
+    <Content Include="Views\roles\Details.cshtml" />
+    <Content Include="Views\roles\Edit.cshtml" />
+    <Content Include="Views\roles\Delete.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Home\Errorpage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55212</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55212/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
